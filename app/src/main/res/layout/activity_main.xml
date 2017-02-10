@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     tools:context="com.scorpio.mergecanseek.MainActivity">
 
+    <com.scorpio.mergecanseek.AirTube
+        android:id="@+id/airTube"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
 
             <SeekBar
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:rotation="270"
-                android:progressDrawable="@android:color/transparent"
                 android:id = "@+id/seekbar"/>
 
-            <com.scorpio.mergecanseek.AirTube
-                android:id="@+id/airTube"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"/>
+
 
 </FrameLayout>

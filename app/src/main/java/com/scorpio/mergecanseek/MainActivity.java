@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.SeekBar;
+//android:progressDrawable="@android:color/transparent"
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         airTube = (AirTube) findViewById(R.id.airTube);
         seekbar = (SeekBar)findViewById(R.id.seekbar);
-        seekbar.getThumb().mutate().setAlpha(0);
+        //seekbar.getThumb().mutate().setAlpha(0);
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {

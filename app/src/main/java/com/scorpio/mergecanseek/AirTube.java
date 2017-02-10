@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -52,11 +53,12 @@ public class AirTube extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         top2 = bottom;
-        top2 = (int )((float)top2 - (float)MainActivity.k*10);
+        top2 = (int)((float)top2 - (float)MainActivity.k*10);
         //System.out.println(""+bottom);
         rWater.set(left,top2,right,bottom);
         canvas.drawRect(rAir,aPaint);
         canvas.drawRect(rWater,wPaint);
+        Log.d("Output", rWater.height()*100/rAir.height()+"");
         invalidate();
 
     }
